@@ -1,25 +1,13 @@
-export default class AgeCalculator {
+export default class AgeCalc {
     constructor(birthdate) {
+        let now = new Date();
         this.date = new Date(birthdate);
-        
-        console.log(this.date);
-    }
-
-
-ageCalc() {
-    let now = new Date();
-    let age = now.getFullYear() - this.year;
-    let month = today.getMonth() - this.month;
-    
-    if((month < 0) || (month === 0 && today.getDate() < this.day)) {
-        age--;
-    }
-    
-    return age;
-    }
-
-    earthAge() {
-        let age = this.ageCalc()
+        this.year = now.getFullYear();
+        this.age = year - (this.birthdate.getFullYear());
+        this.month = now.getmonthonth() - (this.birthdate.getmonthonth());
+        if (month < 0 || (month === 0 && now.getDate() < (this.birthdate.getDate()))) {
+          age--;
+        }
         return age;
     }
 

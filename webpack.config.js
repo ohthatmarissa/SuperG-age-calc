@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -11,19 +10,10 @@ module.exports = {
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './src'
 },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-      title: 'superG-calculator',
-      template: './src/index.html',
-      inject: 'body'
-    })
-  ],
-  plugins: [
   new UglifyJsPlugin({ sourceMap: true }),
-  new CleanWebpackPlugin(['dist']),
   new HtmlWebpackPlugin({
     title: 'superG-calculator',
     template: './src/index.html',
