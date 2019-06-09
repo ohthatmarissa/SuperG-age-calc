@@ -1,4 +1,5 @@
+// import $ from jQuery;
 
-$().ready(function() {
+// $().ready(function() {
     
-});
+// });

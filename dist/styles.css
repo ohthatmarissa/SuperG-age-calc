@@ -1,0 +1,23 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    background-color: rgb(33, 89, 211);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.row {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+#age-calc {
+    text-align: center;
+}

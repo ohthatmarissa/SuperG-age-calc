@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'superG-calculator',
       template: './src/index.html',
       inject: 'body'
     })
@@ -25,7 +25,7 @@ module.exports = {
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(['dist']),
   new HtmlWebpackPlugin({
-    title: 'Ping Pong',
+    title: 'superG-calculator',
     template: './src/index.html',
     inject: 'body'
   })
